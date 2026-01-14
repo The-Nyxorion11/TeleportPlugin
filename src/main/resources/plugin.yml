@@ -1,0 +1,16 @@
+main: main.Main
+version : 1.0.0
+name: Teleport
+author: TheNyxorion
+api-version: 1.13
+
+commands:
+  setHome:
+    description: set the home
+    aliases:
+      sh
+
+  home:
+    description: teleport to home
+    aliases:
+      he

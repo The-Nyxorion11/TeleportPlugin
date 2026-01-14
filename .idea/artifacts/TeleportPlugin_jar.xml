@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="TeleportPlugin:jar">
+    <output-path>$PROJECT_DIR$/../../servers/1.21.11/plugins</output-path>
+    <root id="archive" name="TeleportPlugin.jar">
+      <element id="module-output" name="TeleportPlugin" />
+    </root>
+  </artifact>
+</component>
