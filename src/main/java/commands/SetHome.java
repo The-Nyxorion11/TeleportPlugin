@@ -44,7 +44,7 @@ public class SetHome implements CommandExecutor {
                db.updateCoordinates(setInfoCoordinates(location, uuidString));
            }
            Bukkit.getScheduler().runTask(plugin, () -> {
-               sender.sendMessage(Utils.colorMessage("&aSet Home!"));
+               sender.sendMessage(Utils.colorMessage(plugin.getConfig().getString("messages.set-home")));
            });
        });
         return false;

@@ -14,6 +14,7 @@ public class Main extends JavaPlugin {
     private DataBase db;
 
     public void onEnable() {
+        saveDefaultConfig();
         //start db
         this.db = new DataBase(this);
         try {

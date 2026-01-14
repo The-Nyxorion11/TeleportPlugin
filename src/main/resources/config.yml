@@ -1,0 +1,6 @@
+messages:
+  #/home
+  no-room: "&4You don't have a teleportation site! Use /setHome to set one"
+  teleporting: "&2Teleporting..."
+  #/setHome
+  set-home: "&aSet Home!"

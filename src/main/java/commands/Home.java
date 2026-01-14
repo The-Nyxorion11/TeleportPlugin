@@ -41,10 +41,10 @@ public class Home implements CommandExecutor {
 
             if ( getCoordinates == null) {
                 //create if doesn't exist info
-                sender.sendMessage(Utils.colorMessage("&4You don't have a teleportation site! Use /setHome to set one"));
+                sender.sendMessage(Utils.colorMessage(plugin.getConfig().getString("messages.no-room")));
 
             }else {
-                sender.sendMessage(Utils.colorMessage("&2Teleporting..."));
+                sender.sendMessage(Utils.colorMessage(plugin.getConfig().getString("messages.teleporting")));
                 Bukkit.getScheduler().runTask(plugin, () -> {
                     World world = Bukkit.getWorld(getCoordinates.getWorld());
                     Location location = new Location(world, getCoordinates.getX(), getCoordinates.getY(), getCoordinates.getZ(), getCoordinates.getYaw(), getCoordinates.getPitch());
